@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IQ Spare Parts Pvt Ltd</title>
+</head>
+
+<body style="margin:0; font-family:Arial; background:#0a0a0a; color:white;">
+
+<!-- HEADER -->
+<div style="background:black; padding:15px; display:flex; justify-content:space-between;">
+  <h2 style="color:gold;">IQ SPARE PARTS</h2>
+  <input type="text" id="search" placeholder="Search parts..." 
+  style="padding:8px; border-radius:6px; border:none;">
+</div>
+
+<!-- HERO -->
+<div style="background:#111; padding:40px; text-align:center;">
+  <h1 style="color:gold;">Luxury Car Spare Parts</h1>
+  <p>All Premium Brands Available</p>
+</div>
+
+<!-- BRAND BUTTONS -->
+<div style="text-align:center; padding:10px;">
+  <button onclick="filter('bmw')">BMW</button>
+  <button onclick="filter('audi')">Audi</button>
+  <button onclick="filter('mercedes')">Mercedes</button>
+  <button onclick="filter('land rover')">Land Rover</button>
+  <button onclick="filter('range rover')">Range Rover</button>
+  <button onclick="filter('jaguar')">Jaguar</button>
+  <button onclick="filter('porsche')">Porsche</button>
+  <button onclick="filter('mini cooper')">Mini Cooper</button>
+  <button onclick="filter('volvo')">Volvo</button>
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" style="
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  padding:20px;
+">
+
+  <!-- BMW -->
+  <div class="item">BMW Headlight</div>
+  <div class="item">BMW Tail Light</div>
+  <div class="item">BMW Mirror</div>
+
+  <!-- AUDI -->
+  <div class="item">Audi Headlight</div>
+  <div class="item">Audi Tail Light</div>
+  <div class="item">Audi Mirror</div>
+
+  <!-- MERCEDES -->
+  <div class="item">Mercedes Headlight</div>
+  <div class="item">Mercedes Tail Light</div>
+  <div class="item">Mercedes Mirror</div>
+
+  <!-- LAND ROVER -->
+  <div class="item">Land Rover Headlight</div>
+  <div class="item">Land Rover Tail Light</div>
+  <div class="item">Land Rover Mirror</div>
+
+  <!-- RANGE ROVER -->
+  <div class="item">Range Rover Headlight</div>
+  <div class="item">Range Rover Tail Light</div>
+  <div class="item">Range Rover Mirror</div>
+
+  <!-- JAGUAR -->
+  <div class="item">Jaguar Headlight</div>
+  <div class="item">Jaguar Tail Light</div>
+  <div class="item">Jaguar Mirror</div>
+
+  <!-- PORSCHE -->
+  <div class="item">Porsche Headlight</div>
+  <div class="item">Porsche Tail Light</div>
+  <div class="item">Porsche Mirror</div>
+
+  <!-- MINI COOPER -->
+  <div class="item">Mini Cooper Headlight</div>
+  <div class="item">Mini Cooper Tail Light</div>
+  <div class="item">Mini Cooper Mirror</div>
+
+  <!-- VOLVO -->
+  <div class="item">Volvo Headlight</div>
+  <div class="item">Volvo Tail Light</div>
+  <div class="item">Volvo Mirror</div>
+
+</div>
+
+<!-- CONTACT -->
+<div style="background:#111; padding:20px; text-align:center;">
+  <h3 style="color:gold;">Contact</h3>
+  <p>
+    📍 Shop No. 368, Gulab Shah Estate, Kurla (West), Mumbai<br>
+    📞 9137979895 | 👤 9699053335
+  </p>
+
+  <a href="https://wa.me/919137979895">
+    <button style="padding:12px; background:#25D366; border:none; color:white; border-radius:8px;">
+      WhatsApp Now
+    </button>
+  </a>
+</div>
+
+<script>
+document.getElementById("search").addEventListener("keyup", function(){
+  let value = this.value.toLowerCase();
+  document.querySelectorAll(".item").forEach(function(el){
+    el.style.display = el.innerText.toLowerCase().includes(value) ? "block" : "none";
+  });
+});
+
+function filter(brand){
+  document.querySelectorAll(".item").forEach(function(el){
+    el.style.display = el.innerText.toLowerCase().includes(brand) ? "block" : "none";
+  });
+}
+</script>
+
+</body>
+</html>
