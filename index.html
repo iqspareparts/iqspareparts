@@ -17,51 +17,26 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px;
-background:linear-gradient(90deg,#000,#1a1a1a);
-box-shadow:0 0 20px rgba(255,215,0,0.2);
+background:#000;
 position:sticky;
 top:0;
-z-index:100;
 }
 
-/* LOGO BOX 3D */
-.logo-box{
+/* LOGO */
+.logo{
+color:gold;
 font-size:20px;
 font-weight:bold;
-color:gold;
-padding:10px 15px;
-border-radius:10px;
-background:linear-gradient(145deg,#111,#000);
-box-shadow:
-5px 5px 15px #000,
--5px -5px 15px #1a1a1a;
-text-shadow:
-0 1px 0 #b38b00,
-0 2px 10px rgba(0,0,0,0.8),
-0 0 10px gold;
+text-shadow:0 0 10px gold;
 }
 
 /* BUTTON */
 .btn{
 background:#25D366;
 color:white;
-padding:10px 12px;
+padding:10px;
 border-radius:6px;
 text-decoration:none;
-}
-
-/* HERO */
-.hero{
-text-align:center;
-padding:60px 20px;
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
-}
-
-.hero h1{
-color:gold;
-font-size:38px;
-text-shadow:0 0 20px black;
 }
 
 /* SEARCH */
@@ -75,8 +50,6 @@ width:70%;
 padding:12px;
 border-radius:10px;
 border:none;
-outline:none;
-box-shadow:0 0 10px rgba(255,215,0,0.2);
 }
 
 /* GRID */
@@ -87,28 +60,26 @@ gap:15px;
 padding:20px;
 }
 
-/* CARD 3D */
+/* CARD */
 .card{
-background:linear-gradient(145deg,#111,#000);
+background:#111;
 padding:15px;
-border-radius:12px;
+border-radius:10px;
 text-align:center;
 transition:0.3s;
-box-shadow:
-5px 5px 15px #000,
--5px -5px 15px #1a1a1a;
+box-shadow:0 0 10px rgba(255,215,0,0.2);
 }
 
 .card:hover{
 transform:scale(1.05);
-box-shadow:0 0 25px rgba(255,215,0,0.4);
+box-shadow:0 0 20px gold;
 }
 
+/* FOOTER */
 .footer{
 text-align:center;
 padding:20px;
 background:#000;
-margin-top:20px;
 }
 </style>
 
@@ -118,40 +89,62 @@ margin-top:20px;
 
 <!-- HEADER -->
 <div class="header">
-  <div class="logo-box">🚗 I.Q SPARE PARTS PVT LTD</div>
+  <div class="logo">🚗 I.Q SPARE PARTS PVT LTD</div>
   <a class="btn" href="https://wa.me/919137979895">WhatsApp</a>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>Luxury Auto Spare Parts</h1>
-  <p>BMW | Audi | Mercedes | Range Rover | Jaguar | Porsche | Volvo</p>
 </div>
 
 <!-- SEARCH -->
 <div class="search">
-  <input id="search" placeholder="Search BMW headlight, Audi mirror...">
+  <input id="search" placeholder="Search BMW, Audi, Mercedes parts...">
 </div>
 
 <!-- PRODUCTS -->
 <div class="grid">
 
+<!-- BMW -->
 <div class="card">🚗 BMW Headlight</div>
 <div class="card">🚗 BMW Tail Light</div>
 <div class="card">🚗 BMW Mirror</div>
 
+<!-- AUDI -->
 <div class="card">🚗 Audi Headlight</div>
 <div class="card">🚗 Audi Tail Light</div>
 <div class="card">🚗 Audi Mirror</div>
 
+<!-- MERCEDES -->
 <div class="card">🚗 Mercedes Headlight</div>
+<div class="card">🚗 Mercedes Tail Light</div>
 <div class="card">🚗 Mercedes Mirror</div>
 
-<div class="card">🚗 Range Rover Headlight</div>
-<div class="card">🚗 Jaguar Tail Light</div>
+<!-- LAND ROVER -->
+<div class="card">🚗 Land Rover Headlight</div>
+<div class="card">🚗 Land Rover Tail Light</div>
+<div class="card">🚗 Land Rover Mirror</div>
 
+<!-- RANGE ROVER -->
+<div class="card">🚗 Range Rover Headlight</div>
+<div class="card">🚗 Range Rover Tail Light</div>
+<div class="card">🚗 Range Rover Mirror</div>
+
+<!-- JAGUAR -->
+<div class="card">🚗 Jaguar Headlight</div>
+<div class="card">🚗 Jaguar Tail Light</div>
+<div class="card">🚗 Jaguar Mirror</div>
+
+<!-- PORSCHE -->
 <div class="card">🚗 Porsche Headlight</div>
+<div class="card">🚗 Porsche Tail Light</div>
+<div class="card">🚗 Porsche Mirror</div>
+
+<!-- MINI COOPER -->
+<div class="card">🚗 Mini Cooper Headlight</div>
+<div class="card">🚗 Mini Cooper Tail Light</div>
+<div class="card">🚗 Mini Cooper Mirror</div>
+
+<!-- VOLVO -->
+<div class="card">🚗 Volvo Headlight</div>
 <div class="card">🚗 Volvo Tail Light</div>
+<div class="card">🚗 Volvo Mirror</div>
 
 </div>
 
