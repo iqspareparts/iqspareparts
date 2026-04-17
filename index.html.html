@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I.Q SPARE PARTS PVT LTD</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:radial-gradient(circle,#111,#000);
+color:white;
+}
+
+/* HEADER */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#000;
+position:sticky;
+top:0;
+}
+
+/* LOGO */
+.logo{
+color:gold;
+font-size:20px;
+font-weight:bold;
+text-shadow:0 0 10px gold;
+}
+
+/* BUTTON */
+.btn{
+background:#25D366;
+color:white;
+padding:10px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* SEARCH */
+.search{
+text-align:center;
+padding:15px;
+}
+
+.search input{
+width:70%;
+padding:12px;
+border-radius:10px;
+border:none;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+padding:20px;
+}
+
+/* CARD */
+.card{
+background:#111;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 0 10px rgba(255,215,0,0.2);
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px gold;
+}
+
+/* FOOTER */
+.footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">🚗 I.Q SPARE PARTS PVT LTD</div>
+  <a class="btn" href="https://wa.me/919137979895">WhatsApp</a>
+</div>
+
+<!-- SEARCH -->
+<div class="search">
+  <input id="search" placeholder="Search BMW, Audi, Mercedes parts...">
+</div>
+
+<!-- PRODUCTS -->
+<div class="grid">
+
+<!-- BMW -->
+<div class="card">🚗 BMW Headlight</div>
+<div class="card">🚗 BMW Tail Light</div>
+<div class="card">🚗 BMW Mirror</div>
+
+<!-- AUDI -->
+<div class="card">🚗 Audi Headlight</div>
+<div class="card">🚗 Audi Tail Light</div>
+<div class="card">🚗 Audi Mirror</div>
+
+<!-- MERCEDES -->
+<div class="card">🚗 Mercedes Headlight</div>
+<div class="card">🚗 Mercedes Tail Light</div>
+<div class="card">🚗 Mercedes Mirror</div>
+
+<!-- LAND ROVER -->
+<div class="card">🚗 Land Rover Headlight</div>
+<div class="card">🚗 Land Rover Tail Light</div>
+<div class="card">🚗 Land Rover Mirror</div>
+
+<!-- RANGE ROVER -->
+<div class="card">🚗 Range Rover Headlight</div>
+<div class="card">🚗 Range Rover Tail Light</div>
+<div class="card">🚗 Range Rover Mirror</div>
+
+<!-- JAGUAR -->
+<div class="card">🚗 Jaguar Headlight</div>
+<div class="card">🚗 Jaguar Tail Light</div>
+<div class="card">🚗 Jaguar Mirror</div>
+
+<!-- PORSCHE -->
+<div class="card">🚗 Porsche Headlight</div>
+<div class="card">🚗 Porsche Tail Light</div>
+<div class="card">🚗 Porsche Mirror</div>
+
+<!-- MINI COOPER -->
+<div class="card">🚗 Mini Cooper Headlight</div>
+<div class="card">🚗 Mini Cooper Tail Light</div>
+<div class="card">🚗 Mini Cooper Mirror</div>
+
+<!-- VOLVO -->
+<div class="card">🚗 Volvo Headlight</div>
+<div class="card">🚗 Volvo Tail Light</div>
+<div class="card">🚗 Volvo Mirror</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<h2 style="color:gold;">I.Q SPARE PARTS PVT LTD</h2>
+
+📍 SHOP NO 368, GULAB SHAH ESTATE, KURLA WEST, MUMBAI - 400070<br>
+📞 9137979895 | 👤 9699053335
+
+</div>
+
+<script>
+document.getElementById("search").addEventListener("keyup",function(){
+let v=this.value.toLowerCase();
+document.querySelectorAll(".card").forEach(c=>{
+c.style.display=c.innerText.toLowerCase().includes(v)?"block":"none";
+});
+});
+</script>
+
+</body>
+</html>
